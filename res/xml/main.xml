@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 The 2by2 Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:settings="http://schemas.android.com/apk/res/jp.project2by2.CustomSettings">
+
+    <com.android.settingslib.widget.TopIntroPreference
+        android:key="app_intro"
+        android:title="@string/app_summary"/>
+
+    <PreferenceCategory
+        android:key="category_test"
+        android:title="WIP">
+
+        <Preference
+            android:key="pref_test"
+            android:title="Test1" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
