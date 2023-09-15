@@ -10,13 +10,24 @@
         android:key="app_intro"
         android:title="@string/app_summary"/>
 
-    <PreferenceCategory
-        android:key="category_test"
-        android:title="WIP">
+    <!-- Customization -->
+    <!--<PreferenceCategory
+        android:key="category_customize"
+        android:title="@string/category_customize_title">
 
-        <Preference
-            android:key="pref_test"
-            android:title="Test1" />
+    </PreferenceCategory>-->
+
+    <!-- Others -->
+    <PreferenceCategory
+        android:key="category_others"
+        android:title="@string/category_others_title">
+
+        <!-- Unlimited Photos storage -->
+        <SwitchPreference
+            android:key="persist.sys.pixelprops.gphotos"
+            android:title="@string/photos_spoof_title"
+            android:summary="@string/photos_spoof_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 

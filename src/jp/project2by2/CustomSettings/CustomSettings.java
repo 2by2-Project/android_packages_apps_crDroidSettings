@@ -17,6 +17,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.os.Vibrator;
+import android.os.SystemProperties;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.MenuItem;
@@ -38,15 +39,28 @@ public class CustomSettings extends PreferenceFragment
 
     private static final String TAG = CustomSettings.class.getSimpleName();
 
+    public static final String KEY_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
+
+    private SwitchPreference mPhotosSpoofingSwitch;
+
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.addPreferencesFromResource(R.xml.main);
 
         SharedPreferences prefs = getActivity().getSharedPreferences("main", Activity.MODE_PRIVATE);
+
+        mPhotosSpoofingSwitch = findPreference(KEY_PHOTOS_SPOOF);
+        mPhotosSpoofingSwitch.setChecked(SystemProperties.getBoolean(KEY_PHOTOS_SPOOF, false));
+        mPhotosSpoofingSwitch.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mPhotosSpoofingSwitch) {
+            SystemProperties.set(KEY_PHOTOS_SPOOF, String.valueOf(newValue));
+            return true;
+        }
+
         return false;
     }
 
