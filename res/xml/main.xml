@@ -11,11 +11,30 @@
         android:title="@string/app_summary"/>
 
     <!-- Customization -->
-    <!--<PreferenceCategory
+    <PreferenceCategory
         android:key="category_customize"
         android:title="@string/category_customize_title">
 
-    </PreferenceCategory>-->
+        <!-- Battery style -->
+        <jp.project2by2.CustomSettings.preference.SystemSettingListPreference
+            android:key="status_bar_battery_style"
+            android:title="@string/status_bar_battery_style_title"
+            android:summary="%s"
+            android:dialogTitle="@string/status_bar_battery_style_title"
+            android:entries="@array/status_bar_battery_style_entries"
+            android:entryValues="@array/status_bar_battery_style_values"
+            android:defaultValue="0" />
+
+        <jp.project2by2.CustomSettings.preference.SystemSettingListPreference
+            android:key="status_bar_show_battery_percent"
+            android:title="@string/status_bar_battery_percentage_title"
+            android:summary="%s"
+            android:dialogTitle="@string/status_bar_battery_percentage_title"
+            android:entries="@array/status_bar_battery_percentage_entries"
+            android:entryValues="@array/status_bar_battery_percentage_values"
+            android:defaultValue="0" />
+
+    </PreferenceCategory>
 
     <!-- Others -->
     <PreferenceCategory
@@ -23,7 +42,7 @@
         android:title="@string/category_others_title">
 
         <!-- Unlimited Photos storage -->
-        <SwitchPreference
+        <jp.project2by2.CustomSettings.preference.SystemPropertySwitchPreference
             android:key="persist.sys.pixelprops.gphotos"
             android:title="@string/photos_spoof_title"
             android:summary="@string/photos_spoof_summary"

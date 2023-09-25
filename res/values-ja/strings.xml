@@ -13,6 +13,19 @@
     <string name="category_customize_title">カスタマイズ</string>
     <string name="category_others_title">その他</string>
 
+    <!-- Status bar -->
+    <string name="status_bar_battery_title">バッテリーアイコン</string>
+    <string name="status_bar_battery_style_title">電池の状態のスタイル</string>
+    <string name="status_bar_battery_style_icon_portrait">縦向きのアイコン</string>
+    <string name="status_bar_battery_style_circle">サークル</string>
+    <string name="status_bar_battery_style_text">テキスト</string>
+
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">電池のパーセント表示</string>
+    <string name="status_bar_battery_percentage_default">非表示</string>
+    <string name="status_bar_battery_percentage_text_inside">アイコンの中</string>
+    <string name="status_bar_battery_percentage_text_next">アイコンの隣</string>
+
     <!-- Unlimited Photos storage -->
     <string name="photos_spoof_title">無制限のフォトストレージ</string>
     <string name="photos_spoof_summary">お使いの端末は Pixel XL として写真アプリに認識され、無劣化で無制限のフォトストレージを利用できます。</string>
