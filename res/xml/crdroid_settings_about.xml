@@ -29,27 +29,6 @@
              android:targetClass="com.crdroid.settings.fragments.about.ChangelogActivity"/>
     </Preference>
 
-    <!-- crDroid Website -->
-    <Preference
-        android:key="crdroid_website"
-        android:icon="@drawable/ic_web"
-        android:title="@string/crdroid_website_title"
-        android:summary="@string/crdroid_website_summary" />
-
-    <!-- crDroid Translate -->
-    <Preference
-        android:key="crdroid_translate"
-        android:icon="@drawable/ic_translate"
-        android:title="@string/crdroid_translate_title"
-        android:summary="@string/crdroid_translate_summary" />
-
-    <!-- crDroid Share -->
-    <Preference
-        android:key="crdroid_share"
-        android:icon="@drawable/ic_share"
-        android:title="@string/share_crdroid_title"
-        android:summary="@string/share_crdroid_summary" />
-
     <!-- crDroid Donate -->
     <Preference
         android:key="crdroid_donate"
@@ -77,20 +56,6 @@
         android:icon="@drawable/ic_telegram_channel"
         android:title="@string/crdroid_telegram_channel_title"
         android:summary="@string/crdroid_telegram_channel_summary" />
-
-    <!-- crDroid buildserver sponsor -->
-    <Preference
-        android:key="crdroid_buildserversponsor"
-        android:icon="@drawable/ic_sponsor"
-        android:title="@string/crdroid_buildserversponsor_title"
-        android:summary="@string/crdroid_buildserversponsor_summary" />
-
-    <!-- crDroid sponsor -->
-    <Preference
-        android:key="crdroid_sponsor"
-        android:icon="@drawable/ic_sponsor"
-        android:title="@string/crdroid_sponsor_title"
-        android:summary="@string/crdroid_sponsor_summary" />
 
     <!-- crDroid OTA update -->
     <Preference
